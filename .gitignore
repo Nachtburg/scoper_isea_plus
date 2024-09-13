@@ -1,0 +1,18 @@
+# Python bytecode files
+*.pyc
+__pycache__/
+
+# Configuration and cache files
+api_keys.json
+file_cache.json
+
+# Report files
+reports/
+
+# Docker files
+docker-compose.yml
+Dockerfile
+
+# Miscellaneous
+.DS_Store
+.env
