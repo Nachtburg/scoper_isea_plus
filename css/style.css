@@ -1,0 +1,103 @@
+:root {
+    --gradient: linear-gradient(to left top, #2f23d7 40%, #1e90ff 65%, #05f7ff 95%);
+}
+body { 
+    background-color: #2e2e2e;
+    color: #1e90ff;
+    font-family: 'Helvetica', sans-serif;
+    padding: 20px;
+    margin: 0;
+    padding-bottom: 70px;
+}
+nav {
+    font-weight: bold;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 5px;
+}
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+h1, h2, h3 {
+    font-weight: bold;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+h2 {
+    padding: 0;
+    margin: o;
+    margin-bottom: 5px;
+}
+h5 {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+}
+.subtitle {
+    color: cyan;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    margin: 5px 0;
+    padding: 5px;
+    margin-left: 5px;
+    background-color: transparent;
+    color: #eee;
+    position: relative;
+}
+li a {
+    color: inherit;
+    text-decoration: none;
+}
+li a:hover {
+    text-decoration: underline;
+}
+.important {
+    color: yellow;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.footer {
+    font-weight: bold;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+}
+.bg-wrapper {
+    position: relative;
+    background-image: url('../img/bg.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+pre {
+    margin-left: 10px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scoper is a comprehensive malware scanner that detects malicious files, suspicious processes, and network connections. It utilizes VirusTotal for hash analysis and Docker for sandbox execution.">
+    <meta name="keywords" content="malware scanner, VirusTotal, Docker sandbox, file hash analysis, suspicious processes, network connections, cybersecurity">
+    <meta name="author" content="Hexe | Nachtburg">
+    <title>SCOPER | Documentation</title>
+    <link rel="icon" sizes="16x16" href="favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="favicon-32x32.png" type="image/png">
+    <link rel="icon" sizes="48x48" href="favicon-48x48.png" type="image/png">
+    <link rel="icon" sizes="64x64" href="favicon-64x64.png" type="image/png">
+    <link rel="icon" sizes="128x128" href="favicon-128x128.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/terminal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">SCOPER</a> |
+            <a href="disclaimer.html">Disclaimer</a> 
+        </nav>
+    </header>
+    <main>
+        <section id="overview"></section>
+            <h1>DOCUMENTATION</h1>
+            <h2>Overview</h2>
+            <ul>
+                <li><strong>SCOPER ISEA+</strong> is an open-source malware scanning tool for macOS. This tool scans files within a specified directory and uses the VirusTotal API to check for malware. It also checks processes and network connections and saves the scan results as reports.</li>
+                <li>Docker installation and running in the background is required.</li>
+                <li>Some operations may require "sudo" privileges.</li>
+            </ul>
+        </section>
+        
+        <section id="installation">
+            <h2>Installation</h2>
+            <ul>
+                <li>You can set up <strong>SCOPER ISEA+</strong> by cloning the source code from the GitHub repository and installing the necessary dependencies.</li>
+            </ul>
+            <pre><code>git clone https://github.com/Nachtburg/scoper_isea_plus.git</code></pre>
+        </section>
+        
+        <section id="setup">
+            <h2>Initial Setup</h2>
+            <ul>
+                <li>During the first run, you will be prompted to enter the VirusTotal API key interactively. This will automatically generate a configuration file that will be used in subsequent runs.</li>
+                <li>Follow the instructions to enter the API key.</li>
+            </ul>
+            <pre><code>python scoper_isea_plus/scoper.py /path/to/directory</code></pre>
+        </section>
+
+        <section id="usage">
+            <h2>Subsequent Runs</h2>
+            <ul>
+                <li>If a configuration file exists, you can run the scan using the command below. The API key will be automatically loaded from the configuration file.</li>
+                <li>Scan results will be saved as reports in the specified directory.</li>
+            </ul>
+            <pre><code>sudo python scoper_isea_plus/scoper.py -d /path/to/directory</code></pre>
+        </section>
+    </main>    
+    <footer class="footer">
+        <p>&copy; 2024 Hexe | Nachtburg. All rights reserved.</p>
+    </footer>
+</body>
+</html>
